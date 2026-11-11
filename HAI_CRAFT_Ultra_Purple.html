@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080611">
+<title>HAI CRAFT | سرور ماینکرفت</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080611;--panel:#100d1c;--panel2:#171128;--purple:#9b5cff;--violet:#6d35d8;--pink:#d65bff;--white:#f8f5ff;--muted:#aaa2bd;--line:#ffffff17}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Vazirmatn,Tahoma,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 15% 5%,#6826a52b,transparent 35%),radial-gradient(ellipse at 90% 35%,#4424a31c,transparent 38%),linear-gradient(180deg,#0b0714,#080611 60%)}
+a{color:inherit;text-decoration:none}button{font:inherit}.container{width:min(1160px,92%);margin:auto}
+.topline{height:3px;background:linear-gradient(90deg,transparent,#8d4bff,#e47bff,#8d4bff,transparent)}
+header{position:sticky;top:0;z-index:30;background:#090613d9;backdrop-filter:blur(18px);border-bottom:1px solid #a66cff25}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:11px;font-weight:900;font-size:24px;letter-spacing:1px}
+.logo-mark{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(145deg,#bb7aff,#6426c5);box-shadow:0 0 24px #9145ff55;font-size:23px}
+.logo span:last-child{color:#c28bff}
+nav{display:flex;gap:28px;color:#c5bdd4;font-size:14px}nav a{transition:.2s}nav a:hover{color:#d8b6ff}
+.nav-cta{padding:10px 17px;border:1px solid #a86cff66;border-radius:12px;color:#dfc5ff;font-size:13px}
+.menu{display:none;background:#171027;color:#e2caff;border:1px solid #a86cff66;border-radius:11px;padding:5px 12px;font-size:23px}
+.hero{min-height:590px;margin:30px auto 20px;position:relative;isolation:isolate;overflow:hidden;border:1px solid #b27aff35;border-radius:30px;background:linear-gradient(110deg,#10091deF 0%,#130d22df 50%,#10091ddd 100%);box-shadow:0 30px 90px #0008}
+.hero-art{position:absolute;inset:0;z-index:-1;opacity:.8;background:radial-gradient(ellipse at 78% 45%,#6c32b855,transparent 35%),linear-gradient(90deg,#10091d 0%,#10091dbb 45%,#10091d22 100%)}
+.hero-art:before{content:"";position:absolute;right:5%;top:12%;width:43%;height:76%;border:1px solid #c78aff22;transform:perspective(700px) rotateY(-18deg) rotateX(5deg);background:repeating-linear-gradient(0deg,transparent 0 44px,#b878ff12 45px 46px),repeating-linear-gradient(90deg,transparent 0 44px,#b878ff12 45px 46px);box-shadow:inset 0 0 80px #8036cf25,0 0 55px #873dff18}
+.hero-art:after{content:"";position:absolute;right:14%;top:25%;width:24%;height:50%;background:linear-gradient(135deg,#a35cff30,#31115b20);clip-path:polygon(50% 0,100% 23%,100% 78%,50% 100%,0 78%,0 23%);border:1px solid #d6a6ff}
+.hero-content{padding:75px 7%;max-width:720px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 14px;border:1px solid #b47aff55;background:#8d4bff17;border-radius:30px;color:#d9baff;font-size:13px}
+.pulse{width:8px;height:8px;background:#b56cff;border-radius:50%;box-shadow:0 0 12px #b56cff}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.35;margin:25px 0 15px;font-weight:900;letter-spacing:-1px}
+h1 .grad{background:linear-gradient(90deg,#f0d5ff,#b36cff 55%,#8a55ff);background-clip:text;color:transparent}
+.hero p{font-size:16px;line-height:2.2;color:#c2b9d0;max-width:590px;margin:0 0 27px}
+.server-chip{display:inline-flex;align-items:center;gap:16px;direction:ltr;padding:13px 17px;border-radius:13px;background:#ffffff0b;border:1px solid #c39aff4a;font:800 15px monospace}
+.server-chip b{color:#cfa7ff;font:600 12px Vazirmatn;direction:rtl}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 23px;border-radius:12px;border:1px solid transparent;font-weight:800;font-size:14px;cursor:pointer;transition:.22s}
+.btn:hover{transform:translateY(-3px);filter:brightness(1.12)}
+.btn-main{background:linear-gradient(110deg,#a45cff,#6d35d8);box-shadow:0 10px 30px #803de844;color:white}
+.btn-ghost{border-color:#b47aff55;background:#ffffff08;color:#e2ccff}
+.trust-row{display:flex;gap:24px;flex-wrap:wrap;margin-top:35px;color:#c7bdd5;font-size:13px}.trust-row span{display:flex;align-items:center;gap:8px}.trust-row b{color:#c58cff}
+section{padding:55px 0}.section-head{text-align:center;margin-bottom:30px}.kicker{color:#bb8aff;font-size:12px;font-weight:800;letter-spacing:2px}.section-head h2{font-size:30px;margin:7px 0;font-weight:900}.section-head p{color:var(--muted);margin:0;line-height:2}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:24px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#171128,#0e0b18);position:relative;overflow:hidden}.feature:after{content:"";position:absolute;width:100px;height:100px;left:-45px;top:-50px;background:#9b5cff18;filter:blur(25px);border-radius:50%}.feature-icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#9b5cff1c;border:1px solid #a66cff40;color:#d6b4ff;font-size:22px}.feature h3{margin:14px 0 5px;font-size:17px}.feature p{margin:0;color:var(--muted);font-size:13px;line-height:2}
+.rank-intro{display:flex;justify-content:center;gap:8px;align-items:center;margin-bottom:24px;color:#d7c4ed;font-size:13px}.rank-intro i{width:7px;height:7px;border-radius:50%;background:#b77aff;box-shadow:0 0 10px #b77aff}
+.ranks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:stretch}
+.rank{position:relative;display:flex;flex-direction:column;min-width:0;padding:22px 18px 18px;border-radius:19px;border:1px solid #a66cff35;background:linear-gradient(160deg,#1a1230,#0e0b18 75%);overflow:hidden;transition:.25s}
+.rank:hover{transform:translateY(-7px);border-color:#c18aff;box-shadow:0 18px 40px #7e36d52a}
+.rank:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,transparent,#a85cff,transparent)}
+.rank.vip:before{background:linear-gradient(90deg,transparent,#52b8ff,transparent)}.rank.prime:before{background:linear-gradient(90deg,transparent,#c18aff,transparent)}.rank.mega:before{background:linear-gradient(90deg,transparent,#ff72d1,transparent)}.rank.sponsor:before{background:linear-gradient(90deg,transparent,#ffcf70,transparent)}
+.rank.sponsor{background:linear-gradient(155deg,#302113,#17101d 75%);border-color:#e6b75b55}
+.rank-label{font-size:10px;color:#d5b6ff;background:#a45cff18;border:1px solid #a45cff3a;border-radius:30px;padding:5px 9px;align-self:flex-start}
+.rank h3{font-size:23px;letter-spacing:1px;margin:13px 0 3px}.rank .desc{color:#a99eb8;font-size:11px;min-height:24px}
+.price{font-size:25px;font-weight:900;color:#d6adff;margin:13px 0 0}.price small{font-size:11px;color:#aaa0b5;font-weight:500}.period{font-size:11px;color:#8f879a;margin-bottom:12px}
+.rank ul{list-style:none;padding:0;margin:12px 0 20px;flex:1;color:#d2c9dd;font-size:12px;line-height:2.4}.rank li:before{content:"✦";color:#b77aff;margin-left:8px}.rank.sponsor li:before{color:#ffd174}
+.rank .btn{width:100%;font-size:12px;padding:12px 8px}.rank.sponsor .btn{background:linear-gradient(110deg,#f5cf77,#c58a2c);color:#241605}
+.popular{position:absolute;left:12px;top:13px;font-size:9px;padding:4px 7px;border-radius:20px;background:#a45cff2b;color:#e2c9ff}
+.notice{max-width:850px;margin:24px auto 0;text-align:center;color:#9e95ab;font-size:11px;line-height:1.9}
+.rules-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.rule{display:flex;gap:14px;padding:20px;border:1px solid var(--line);border-radius:16px;background:#ffffff05}.rule-num{font-size:20px;color:#b87aff;font-weight:900}.rule h3{font-size:14px;margin:0 0 4px}.rule p{font-size:12px;color:var(--muted);line-height:1.9;margin:0}
+.support-box{max-width:820px;margin:auto;text-align:center;padding:35px 20px;border:1px solid #a86cff45;border-radius:22px;background:radial-gradient(ellipse at 50% 0%,#7738b52b,transparent 65%),#120d20}.support-box h3{font-size:22px;margin:0 0 8px}.support-box p{color:var(--muted);line-height:2;font-size:13px}.support-links{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:20px}.support-links a{padding:11px 17px;border:1px solid #b47aff55;border-radius:11px;background:#ffffff08;color:#e0c9ff;font-size:13px}
+footer{border-top:1px solid #a66cff25;padding:26px 0;color:#8f879b;text-align:center;font-size:12px}footer strong{color:#c18aff}
+.modal{display:none;position:fixed;inset:0;z-index:60;background:#05030bdc;backdrop-filter:blur(9px);align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modal-card{width:min(420px,100%);padding:28px;border-radius:22px;border:1px solid #bb85ff88;background:linear-gradient(145deg,#211333,#100b1b);box-shadow:0 25px 80px #000c;text-align:center}.modal-card .gem{font-size:30px;color:#c18aff}.modal-card h3{margin:8px 0;font-size:21px}.modal-card p{color:#c6bad4;font-size:13px;line-height:2}.owner-id{display:inline-block;direction:ltr;color:#d9b5ff;font-weight:900;font-size:20px;margin:5px 0 18px}.modal-buttons{display:flex;justify-content:center;gap:9px;flex-wrap:wrap}.modal-buttons a,.modal-buttons button{border:0;border-radius:10px;padding:11px 16px;font:700 13px Vazirmatn;cursor:pointer}.modal-go{background:linear-gradient(100deg,#a45cff,#6d35d8);color:#fff}.modal-close{background:#ffffff12;color:#fff;border:1px solid #ffffff22!important}
+@media(max-width:900px){.ranks{grid-template-columns:repeat(2,1fr)}.hero{min-height:540px}.hero-art:before{right:-5%;width:55%;opacity:.6}}
+@media(max-width:650px){.nav{height:69px}.menu{display:block}nav{display:none;position:absolute;top:69px;right:4%;left:4%;padding:18px;background:#130d20;border:1px solid var(--line);border-radius:15px;flex-direction:column;gap:16px}nav.open{display:flex}.nav-cta{display:none}.hero{margin-top:18px;min-height:0;border-radius:22px}.hero-content{padding:42px 22px 35px}.hero-art:before{width:80%;right:10%;top:8%;height:85%;opacity:.3}h1{font-size:39px}.hero p{font-size:14px}.server-chip{font-size:12px;padding:12px}.trust-row{gap:12px}.features,.rules-grid{grid-template-columns:1fr}.ranks{grid-template-columns:1fr}.rank{padding:23px}.section-head h2{font-size:25px}section{padding:42px 0}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header><div class="container nav">
+<a class="logo" href="#home"><span class="logo-mark">H</span><span>HAI <span>CRAFT</span></span></a>
+<button class="menu" id="menuBtn" aria-label="باز کردن منو">☰</button>
+<nav id="nav"><a href="#home">خانه</a><a href="#features">ویژگی‌ها</a><a href="#ranks">فروشگاه رنک</a><a href="#rules">قوانین</a><a href="#support">پشتیبانی</a></nav>
+<a class="nav-cta" href="#ranks">مشاهده رنک‌ها ←</a>
+</div></header>
+<main class="container">
+<section class="hero" id="home"><div class="hero-art"></div><div class="hero-content">
+<div class="eyebrow"><span class="pulse"></span> دنیای جدیدت از اینجا شروع می‌شه</div>
+<h1>قدرتت رو ثابت کن<br>در <span class="grad">HAI CRAFT</span></h1>
+<p>ماجراجویی کن، بساز، رقابت کن و جایگاه خودت رو در دنیای HAI CRAFT پیدا کن. یک تجربه متفاوت از ماینکرفت در راهه.</p>
+<div class="server-chip"><span>IP: SOON</span><span style="color:#665b75">/</span><span>PORT: SOON</span><b>به‌زودی</b></div>
+<div class="hero-actions"><a class="btn btn-main" href="#ranks">✦ ورود به فروشگاه</a><a class="btn btn-ghost" href="https://rubika.ir/serverhai" target="_blank" rel="noopener">عضویت در کانال ↗</a></div>
+<div class="trust-row"><span><b>✧</b> جامعه دوستانه</span><span><b>◈</b> امکانات اختصاصی</span><span><b>♛</b> رقابت و پیشرفت</span></div>
+</div></section>
+<section id="features"><div class="section-head"><div class="kicker">WHY HAI CRAFT</div><h2>چرا HAI CRAFT؟</h2><p>چیزی بیشتر از یک سرور معمولی ماینکرفت</p></div>
+<div class="features">
+<article class="feature"><div class="feature-icon">♛</div><h3>سیستم رنک اختصاصی</h3><p>با پیشرفت در سرور، جایگاه خودت رو بساز و از قابلیت‌های ویژه استفاده کن.</p></article>
+<article class="feature"><div class="feature-icon">⚒</div><h3>ابزارهای ساخت‌وساز</h3><p>برای ساخت پروژه‌ها و مدیریت زمین، ابزارهای کاربردی در اختیارت قرار می‌گیره.</p></article>
+<article class="feature"><div class="feature-icon">◈</div><h3>اقتصاد و فروشگاه</h3><p>در اقتصاد سرور پیشرفت کن و آیتم‌ها و امکانات موردنیازت رو تهیه کن.</p></article>
+</div></section>
+<section id="ranks"><div class="section-head"><div class="kicker">RANK STORE</div><h2>رنک موردعلاقه‌ات رو انتخاب کن</h2><p>روی کارت هر رنک بزن تا راهنمای خرید نمایش داده بشه.</p></div>
+<div class="rank-intro"><i></i> چهار سطح ویژه برای بازیکنان HAI CRAFT</div>
+<div class="ranks">
+<article class="rank vip" onclick="openBuy('VIP')"><span class="rank-label">شروع ویژه</span><h3>VIP</h3><div class="desc">قدم اول برای متمایز بودن</div><div class="price">۳۰,۰۰۰ <small>تومان</small></div><div class="period">اعتبار ۳۰ روز</div><ul><li>دسترسی پرواز</li><li>دسترسی انتقال بازیکن</li><li>ست الماسی</li><li>۳۰ سیب طلایی</li></ul><button class="btn btn-main" type="button">انتخاب VIP</button></article>
+<article class="rank prime" onclick="openBuy('PRIME')"><span class="rank-label">پیشنهاد ویژه</span><span class="popular">محبوب</span><h3>PRIME</h3><div class="desc">امکانات بیشتر برای بازی</div><div class="price">۴۰,۰۰۰ <small>تومان</small></div><div class="period">اعتبار ۵۰ روز</div><ul><li>دسترسی پرواز</li><li>دسترسی انتقال بازیکن</li><li>ست الماسی</li><li>کمان ویژه</li></ul><button class="btn btn-main" type="button">انتخاب PRIME</button></article>
+<article class="rank mega" onclick="openBuy('MEGA')"><span class="rank-label">سطح پیشرفته</span><h3>MEGA</h3><div class="desc">برای بازیکنان جدی‌تر</div><div class="price">۷۰,۰۰۰ <small>تومان</small></div><div class="period">اعتبار ۳۰ روز</div><ul><li>دسترسی پرواز</li><li>دسترسی تغییر زمان</li><li>دسترسی انتقال بازیکن</li><li>ست الماسی و کمان ویژه</li></ul><button class="btn btn-main" type="button">انتخاب MEGA</button></article>
+<article class="rank sponsor" onclick="openBuy('SPONSOR')"><span class="rank-label">بالاترین سطح</span><h3>SPONSOR</h3><div class="desc">خاص‌ترین جایگاه HAI CRAFT</div><div class="price" style="color:#ffd783">۲۵۰,۰۰۰ <small>تومان</small></div><div class="period">مدت اعتبار: ویژه</div><ul><li>تمام قابلیت‌های رنک‌های پایین‌تر</li><li>تگ اختصاصی اسپانسر</li><li>پکیج تجهیزات ویژه</li><li>اولویت پشتیبانی</li><li>دسترسی‌های اختصاصی</li></ul><button class="btn" type="button">انتخاب SPONSOR</button></article>
+</div>
+<p class="notice">قیمت‌ها و قابلیت‌ها قبل از خرید با مدیریت نهایی می‌شوند. خرید رنک فقط از طریق آیدی مالک اصلی سرور انجام می‌شود.</p>
+</section>
+<section id="rules"><div class="section-head"><div class="kicker">SERVER RULES</div><h2>قوانین ساده، بازی بهتر</h2><p>برای حفظ امنیت و احترام در جامعه سرور</p></div>
+<div class="rules-grid"><article class="rule"><div class="rule-num">۰۱</div><div><h3>احترام به دیگران</h3><p>با بازیکنان و اعضای تیم مدیریت محترمانه رفتار کن.</p></div></article><article class="rule"><div class="rule-num">۰۲</div><div><h3>بازی عادلانه</h3><p>استفاده از چیت و ابزارهای غیرمجاز ممنوع است.</p></div></article><article class="rule"><div class="rule-num">۰۳</div><div><h3>چت سالم</h3><p>از اسپم، توهین و تبلیغات بدون اجازه خودداری کن.</p></div></article></div>
+</section>
+<section id="support"><div class="section-head"><div class="kicker">CONTACT US</div><h2>پشتیبانی HAI CRAFT</h2><p>برای خرید رنک یا ارتباط با مدیریت از راه‌های رسمی استفاده کن.</p></div>
+<div class="support-box"><div class="feature-icon" style="margin:0 auto 14px">♧</div><h3>اونر اصلی سرور: Vexor</h3><p>جهت خرید رنک به آیدی اونر اصلی سرور مراجعه کنید.</p><div class="support-links"><a href="https://rubika.ir/Nex_Official" target="_blank" rel="noopener">@Nex_Official</a><a href="https://rubika.ir/serverhai" target="_blank" rel="noopener">کانال رسمی @serverhai</a></div></div>
+</section>
+</main>
+<footer><div class="container">ساخته‌شده برای بازیکنان ماینکرفت · <strong>HAI CRAFT</strong> © تمام حقوق محفوظ است.</div></footer>
+<div class="modal" id="buyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><div class="gem">✧</div><h3 id="modalTitle">خرید رنک</h3><p>جهت خرید این رنک به آیدی اونر اصلی سرور مراجعه کنید:</p><a class="owner-id" href="https://rubika.ir/Nex_Official" target="_blank" rel="noopener">@Nex_Official</a><div class="modal-buttons"><a class="modal-go" href="https://rubika.ir/Nex_Official" target="_blank" rel="noopener">مراجعه به آیدی اونر</a><button class="modal-close" onclick="closeBuy()">بستن</button></div></div></div>
+<script>
+const nav=document.getElementById('nav');document.getElementById('menuBtn').addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+function openBuy(rank){document.getElementById('modalTitle').textContent='خرید رنک '+rank;document.getElementById('buyModal').classList.add('show')}
+function closeBuy(){document.getElementById('buyModal').classList.remove('show')}
+document.getElementById('buyModal').addEventListener('click',e=>{if(e.target.id==='buyModal')closeBuy()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBuy()});
+</script>
+</body></html>
